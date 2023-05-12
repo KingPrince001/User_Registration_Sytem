@@ -1,3 +1,20 @@
+const deleteButton1 = document.getElementById("delete1");
+const deleteButton2 = document.getElementById("delete2");
+
+deleteButton1.addEventListener("click", (e) => {
+    e.preventDefault();
+    const container1 = document.getElementsByClassName("containNameAndID")[0];
+    container1.remove();
+});
+
+deleteButton2.addEventListener("click", (x) => {
+    x.preventDefault();
+    const container2 = document.getElementsByClassName("containNameAndID")[1];
+    container2.remove();
+});
+
+
+
 // Delete User Function
 function deleteUser() {
     let userToDelete = event.target.parentNode;
@@ -25,7 +42,7 @@ function deleteUser() {
         country +
         '</p><p class="lang">' +
         languages +
-        '</p><button id="delete" onclick="deleteUser()">Delete User</button>';
+        '</p><button class="btn" onclick="deleteUser()">Delete User</button>';
   
       let userForm = document.getElementById("userForm");
       let result = document.getElementById("result");
