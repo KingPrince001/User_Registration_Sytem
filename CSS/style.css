@@ -1,0 +1,109 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    letter-spacing: 0.5px;
+    background-color: whitesmoke;
+}
+nav {
+    ;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+     justify-content: space-evenly;
+     align-items: center;
+     background-color: green;
+     height: 50px
+
+}
+nav li:hover a {
+    background-color: greenyellow;
+    padding: 10px;
+    border-radius: 5px;
+}
+nav ul li a {
+text-decoration: none;
+color: white;
+font-size:18px ;
+text-transform: capitalize;
+transition: all 100ms ease-in-out;
+}
+.main {
+    /* margin: 0 500px; */
+}
+.name {
+    font-weight: normal;
+    font-size: 16px;
+}
+.style {
+    background-color: greenyellow;
+    color: white;
+    padding: 8px;
+    /* border-radius: 5px; */
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.containNameAndID {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 500px;
+    margin: 10px ;
+}
+#delete {
+    outline: none;
+    border: none;
+    font-size:12px ;
+    background-color: red;
+    color: white;
+    padding: 8px ;
+    height: 45px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.container {
+	max-width: 500px;
+	margin: auto;
+	padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+	text-align: center;
+}
+
+form {
+	border: 3px solid #f1f1f1;
+}
+
+input[type=text], select {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+button[type=button] {
+	background-color: #4CAF50;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	float: left;
+}
+
+button[type=button]:hover {
+	background-color: #45a049;
+}
+
+#result {
+	padding-top: 20px;
+}

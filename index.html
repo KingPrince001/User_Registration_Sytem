@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>User Registration Form</title>
+	<link rel="stylesheet" type="text/css" href="./CSS/style.css">
+	<script src="./JavaScript/javascript.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="">home</a></li>
+                <li><a href="">users</a></li>
+                <li><a href="">help</a></li>
+                <li><a href="">log out</a></li>
+                <li><a href="">notifications</a></li>
+            </ul>
+        </nav>
+    </header>
+  
+	<div class="container">
+		<h1>User Registration Form</h1>
+		<form id="userForm">
+			<label for="name">Name:</label><br>
+			<input type="text" id="name" name="name" placeholder="Enter your full name here ..."><br>
+
+			<label for="idNumber">ID Number:</label><br>
+			<input type="text" id="idNumber" name="idNumber" placeholder="Enter your ID Number here .."><br>
+
+			<label for="country">Country:</label><br>
+			<select id="country" name="country">
+				<option value="">--Please select a country--</option>
+				<option value="USA">USA</option>
+				<option value="Canada">Canada</option>
+				<option value="Mexico">Mexico</option>
+                <option value="USA">Kenya</option>
+				<option value="Canada">Ghana</option>
+				<option value="Mexico">Uganda</option>
+                <option value="USA">Tanzania</option>
+				<option value="Canada">Somalia</option>
+				<option value="Mexico">Sudan</option>
+			</select><br>
+
+			<label for="languages">Languages Spoken:</label><br>
+			<select id="languages" name="languages">
+				<option value="">--Please select a language--</option>
+				<option value="English">English</option>
+				<option value="Spanish">Spanish</option>
+				<option value="French">French</option>
+				<option value="German">German</option>
+			</select><br>
+
+			<button type="button" onclick="createUser()">Create User</button>
+		
+		
+
+			<div id="result"></div>
+
+            <div class="main">
+                <!-- <div class="containNameAndID">
+                    <h2 class="name style">NAME</h2>
+                <p class="IDNum style">ID NUMBER</p>
+                <p class="country style">NATIONALITY</p>
+                <p class="lang style">LANGUAGE</p>
+             <p class="action name style">Action</p>
+                </div> -->
+                <div class="containNameAndID">
+                    <h2 class="name">John Chege</h2>
+                <p class="IDNum">1234567</p>
+                <p class="country">Kenya</p>
+                <p class="lang">English</p>
+                <button id="delete">Delete User</button>
+                </div>
+        
+                <div class="containNameAndID">
+                    <h2 class="name">Mary Njoki</h2>
+                <p class="IDNum">9034567</p>
+                <p class="country">Tanzania</p>
+                <p class="lang">Swahili</p>
+                <button id="delete">Delete User</button>
+                </div>
+        
+                
+            </div>
+		</form> 
+    </div> 
+
+ 
+</body> 
+</html> 
