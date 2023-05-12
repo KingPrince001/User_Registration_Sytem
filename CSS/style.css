@@ -51,8 +51,8 @@ transition: all 100ms ease-in-out;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 500px;
-    margin: 10px ;
+    width: 490px;
+    margin: 10px 0;
 }
 .btn {
     outline: none;
